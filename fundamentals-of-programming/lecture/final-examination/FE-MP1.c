@@ -2,7 +2,7 @@
 
 FINAL EXAMINATION (LEC)
 
-Write a program that reads in a room number, the room’s capacity, and the
+Write a program that reads in a room number, the roomï¿½s capacity, and the
 size of the class enrolled so far and prints an output line showing the
 classroom number, the capacity, number of seats filled, number of seats
 available, and whether the class is filled or not filled. Your program should
@@ -29,15 +29,13 @@ Room	Capacity	Enrolment	Empty Seats	Filled/Not Filled
 *****************************************************************************/
 
 #include <stdio.h>
-#include <conio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main()
 {
 	int rmNo, rmCap, enrol, empSeat;
 	char fld[7] = "Filled", notFld[11] = "Not Filled", fill[11], resp;
-	
-	system("cls");
 	
 	do {
 		// INPUT
@@ -67,7 +65,6 @@ int main()
 		printf("\n\nTry Again [Y/N]? ");
 		scanf(" %c", &resp);
 	} while (toupper(resp) == 'Y');
-	
-	getch();
+
 	return 0;
 }

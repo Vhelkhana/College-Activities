@@ -9,12 +9,11 @@ taken as inputs the diameter of its circular base and its height.
 ****************************************************************************/
 
 #include <stdio.h>
-#include <conio.h> 
-#define pi 3.1416
 
 int main()
 {
-    float d,h,r,V;
+    const float PI = 3.1416;
+    float d, h, r, V;
     
     printf("===VOLUME OF A CYLINDER CALCULATOR===\n\n");
     printf("Enter diameter: ");
@@ -23,11 +22,10 @@ int main()
     scanf("%f", &h);
     
     r = d/2;
-    V = pi*r*r*h;
-    // V = pi*(d/2)*(d/2)*h;
+    V = PI*r*r*h;
+    // V = PI*(d/2)*(d/2)*h;
     
-    printf("\nThe volume of the cylinder is %0.2f cm^3.",V);
+    printf("\nThe volume of the cylinder is %0.2f cm^3.\n",V);
 
-    getch();
     return 0;
 }

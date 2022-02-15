@@ -9,15 +9,12 @@ box using that input as the value for side.
 *****************************************************************************/
 
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
+#include <ctype.h>
 
 int main()
 {
 	float peri, area, vol, sdL;
 	char resp;
-	
-	system("cls");
 	
 	do {
 		// INPUT
@@ -41,6 +38,5 @@ int main()
 		scanf(" %c", &resp);
 	} while (toupper(resp) == 'Y');
 	
-	getch();
 	return 0;
 }

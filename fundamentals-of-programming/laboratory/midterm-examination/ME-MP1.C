@@ -10,7 +10,6 @@ cost of the gasoline for the commute.
 *****************************************************************************/
 
 #include <stdio.h>
-#include <conio.h>
 
 float costGas, distanceCommute, fuelEfficiency, priceGas;
 
@@ -26,8 +25,7 @@ int main()
 	scanf("%f", &priceGas);
 	
     costGas = (distanceCommute/fuelEfficiency) * priceGas;
-    printf("\nThe cost of the gasoline of the commute is PHP %0.2f.", costGas);
+    printf("\nThe cost of the gasoline of the commute is PHP %0.2f.\n", costGas);
     
-    getch();
     return 0;
 }

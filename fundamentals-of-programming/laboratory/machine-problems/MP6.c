@@ -10,16 +10,13 @@ entered.
 *****************************************************************************/
 
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
+#include <ctype.h>
 
 int main()
 {
 	int grades[5], i, lGrade, hGrade;
 	float sum = 0, GWA;
 	char resp;
-	
-	system("cls");
 	
 	do {
 		printf("Enter 5 grades in percentile format within 0-100.");
@@ -58,7 +55,5 @@ int main()
 		scanf(" %c", &resp);
 	} while (toupper(resp) == 'Y');
 	
-	
-	getch();
 	return 0;
 }

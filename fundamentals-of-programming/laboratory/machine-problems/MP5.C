@@ -24,7 +24,6 @@ and computes the display the Final Account Balance.
 
 *****************************************************************************/
 #include <stdio.h>
-#include <conio.h>
 #include <math.h>
 
 void AccBal(float StartBal, float Rate, float N);
@@ -44,7 +43,6 @@ int main()
     
     AccBal(StartBal, Rate, N);
 
-    getch();
     return 0;
 }
 
@@ -53,5 +51,5 @@ void AccBal(float StartBal, float Rate, float N)
     float FinalBal; 
     
     FinalBal = StartBal * pow((1 + Rate / 365), N);
-    printf("\nYour final account balance is USD %0.2f.", FinalBal);
+    printf("\nYour final account balance is USD %0.2f.\n", FinalBal);
 }

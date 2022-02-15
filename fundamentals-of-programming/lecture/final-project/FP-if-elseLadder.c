@@ -34,14 +34,10 @@ W. W. Norton & Company.
 
 *****************************************************************************/
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
 
 int main()
 {
     int hours, minutes, depMin;
-    
-    system("cls");
     
     printf("Departure time      Arrival time\n");
     printf("8:00 a.m.           10:16 a.m.\n"); // 480 ==> 9:45pm - 8am = 615mins / 2 = 307.5 ==> 172.5 to 531.5
@@ -64,22 +60,21 @@ int main()
     depMin = (hours * 60) + minutes;
     
     if (depMin >= 172.5 && depMin <= 531.5)
-        printf("Closest departure time is 8:00 a.m., arriving at 10:16 a.m.");
+        printf("Closest departure time is 8:00 a.m., arriving at 10:16 a.m.\n");
     else if (depMin >= 531.6 && depMin <= 631)
-        printf("Closest departure time is 9:43 a.m., arriving at 11:52 a.m.");
+        printf("Closest departure time is 9:43 a.m., arriving at 11:52 a.m.\n");
     else if (depMin >= 632 && depMin <= 723)
-        printf("Closest departure time is 11:19 a.m., arriving at 1:31 p.m.");
+        printf("Closest departure time is 11:19 a.m., arriving at 1:31 p.m.\n");
     else if (depMin >= 724 && depMin <= 803.5)
-        printf("Closest departure time is 12:47 p.m., arriving at 3:00 p.m.");
+        printf("Closest departure time is 12:47 p.m., arriving at 3:00 p.m.\n");
     else if (depMin >= 803.6 && depMin <= 892.5)
-        printf("Closest departure time is 2:00 p.m., arriving at 4:08 p.m.");
+        printf("Closest departure time is 2:00 p.m., arriving at 4:08 p.m.\n");
     else if (depMin >= 892.6 && depMin <= 1042.5)
-        printf("Closest departure time is 3:45 p.m., arriving at 5:55 p.m.");
+        printf("Closest departure time is 3:45 p.m., arriving at 5:55 p.m.\n");
     else if (depMin >= 1042.6 && depMin <= 1125)
-        printf("Closest departure time is 7:00 p.m., arriving at 9:20 p.m.");
+        printf("Closest departure time is 7:00 p.m., arriving at 9:20 p.m.\n");
     else if (depMin >= 1126 && depMin <= 1432.5)
-        printf("Closest departure time is 9:45 p.m., arriving at 11:58 p.m.");
+        printf("Closest departure time is 9:45 p.m., arriving at 11:58 p.m.\n");
 
-    getch();
     return 0;
 }

@@ -24,15 +24,12 @@ No. of Unsatisfactory Scores: 1
 *****************************************************************************/
 
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
+#include <ctype.h>
 
 int main()
 {
 	int i, scores[5], unsatSc = 0, satSc = 0, outSc = 0;
 	char resp;
-	
-	system("cls");
 	
 	do {
 		printf("\nEnter 5 Exam Scores:");
@@ -76,6 +73,5 @@ int main()
 		scanf(" %c", &resp);
 	} while (toupper(resp) == 'Y');
 	
-	getch();
 	return 0;
 }

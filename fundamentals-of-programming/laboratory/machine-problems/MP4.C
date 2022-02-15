@@ -28,7 +28,6 @@ The meeting cannot be held as planned due to fire regulations...
 
 *****************************************************************************/
 #include <stdio.h>
-#include <conio.h>
 
 void mtFrReg(int rmCap, int nmPeople);
 
@@ -43,7 +42,6 @@ int main()
     
     mtFrReg(rmCap, nmPeople);
     
-    getch();
     return 0;
 }
 
@@ -53,17 +51,17 @@ void mtFrReg(int rmCap, int nmPeople)
 
     if (nmPeople <= rmCap) {
         adPeople = rmCap - nmPeople;
-        printf("\nIt is legal to hold the meeting...");
+        printf("It is legal to hold the meeting...");
         if ((adPeople != 1) && (adPeople != 0))
-            printf("\n%d additional people may legally attend.", adPeople);
+            printf("\n%d additional people may legally attend.\n", adPeople);
         else
-            printf("\n%d additional person may legally attend.", adPeople); 
+            printf("\n%d additional person may legally attend.\n", adPeople); 
     } else if (nmPeople > rmCap) {
         exPeople = nmPeople - rmCap;
-        printf("\nThe meeting cannot be held as planned due to fire regulations...");
+        printf("The meeting cannot be held as planned due to fire regulations...");
 		if (exPeople != 1)
-	        printf("\n%d people must be excluded in order to meet the fire regulations.", exPeople);
+	        printf("\n%d people must be excluded in order to meet the fire regulations.\n", exPeople);
 	    else
-	        printf("\n%d person must be excluded in order to meet the fire regulations.", exPeople);
+	        printf("\n%d person must be excluded in order to meet the fire regulations.\n", exPeople);
     }
 }

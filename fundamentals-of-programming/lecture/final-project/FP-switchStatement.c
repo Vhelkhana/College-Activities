@@ -19,15 +19,11 @@ W. W. Norton & Company.
 
 *****************************************************************************/
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
 
 int main()
 {
     float numGrade;
     int intGrade;
-    
-    system("cls");
     
     do {
         printf("Enter numerical grade: ");
@@ -46,19 +42,18 @@ int main()
         case 2: 
         case 3: 
         case 4: 
-        case 5: printf("Letter grade: F");
+        case 5: printf("Letter grade: F\n");
                 break;
-        case 6: printf("Letter grade: D");
+        case 6: printf("Letter grade: D\n");
                 break;
-        case 7: printf("Letter grade: C");
+        case 7: printf("Letter grade: C\n");
                 break;
-        case 8: printf("Letter grade: B");
+        case 8: printf("Letter grade: B\n");
                 break;
         case 9: 
-        case 10: printf("Letter grade: A");
+        case 10: printf("Letter grade: A\n");
                  break;
     }
     
-    getch();
     return 0;
 }

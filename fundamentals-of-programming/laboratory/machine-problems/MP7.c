@@ -15,20 +15,16 @@ Enter a non-negative integer number: 15
 *****************************************************************************/
 
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
 
 int main()
 {
 	int nNum, i, flag = 0;
 	
-	system("cls");
-	
 	printf("Enter a non-negative integer number: ");
 	scanf("%d", &nNum);
 	
 	if (nNum <= 1) // numbers 1 and below are not prime
-		printf("%d is a non-prime number", nNum);
+		printf("%d is a non-prime number\n", nNum);
 	else if (nNum > 1) {
 		for(i = 2; i <= nNum/2; i++) {
 	        if(nNum % i == 0) {
@@ -36,11 +32,10 @@ int main()
 	        }
 	    }
 	    if (flag == 1)
-	        printf("%d is a non-prime number", nNum);
+	        printf("%d is a non-prime number\n", nNum);
 	    else
-	        printf("%d is a prime number", nNum);
+	        printf("%d is a prime number\n", nNum);
 	}
-	
-	getch();
+
 	return 0;
 }

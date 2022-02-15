@@ -27,14 +27,10 @@ W. W. Norton & Company.
 
 *****************************************************************************/
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
 
 int main()
 {
     int totalDays, startDay, i = 1, j;
-    
-    system("cls");
     
     printf("Enter number of days in month: ");
     scanf("%d", &totalDays);
@@ -53,6 +49,5 @@ int main()
             printf("\n");
     }
 
-    getch();
     return 0;
 }

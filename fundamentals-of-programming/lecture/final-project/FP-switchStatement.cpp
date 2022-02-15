@@ -43,16 +43,16 @@ int main()
         case 2: 
         case 3: 
         case 4: 
-        case 5: cout << "Letter grade: F";
+        case 5: cout << "Letter grade: F\n";
                 break;
-        case 6: cout << "Letter grade: D";
+        case 6: cout << "Letter grade: D\n";
                 break;
-        case 7: cout << "Letter grade: C";
+        case 7: cout << "Letter grade: C\n";
                 break;
-        case 8: cout << "Letter grade: B";
+        case 8: cout << "Letter grade: B\n";
                 break;
         case 9: 
-        case 10: cout << "Letter grade: A";
+        case 10: cout << "Letter grade: A\n";
                  break;
     }
     

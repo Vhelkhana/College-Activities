@@ -10,8 +10,7 @@ The input is the weight of the mail.
 
 *****************************************************************************/
 #include <stdio.h>
-#include <conio.h>
-#include <cctype>
+#include <ctype.h>
 
 int main()
 {
@@ -29,29 +28,28 @@ int main()
 		for (ctr; addGrm > 0; ++ctr) {
 	        addGrm -= 1;
 	    }
-		cMail = (ctr*2) + 10;
+		cMail = (ctr * 2) + 10;
     } else {
-		cMail=10.00;
+		cMail = 10.00;
     }
         
     do {
         printf("Do you want to make a special delivery [Y/N]? ");
-		scanf("%c",&temp); /***to catch the null value being returned by
-				   scanf() or gets(), used when there is a scanf() or
-				   gets() prior to reading a character***/
-		scanf("%c",&resp);
+		scanf("%c", &temp); /***to catch the null value being returned
+                   by scanf() or gets(), used when there is a scanf()
+                   or gets() prior to reading a character***/
+		scanf("%c", &resp);
         resp = toupper(resp);
     }
-	while (!((resp)=='Y'||(resp)=='N'));
+	while (!((resp) == 'Y'||(resp) == 'N'));
     
-    if ((resp)=='Y') {
-        cMail+=15;
+    if ((resp) == 'Y') {
+        cMail += 15;
 		printf("\nAdditional PHP 15.00 was added for special delivery.");
-		printf("\nThe total cost of postage is PHP %0.2f.",cMail);
+		printf("\nThe total cost of postage is PHP %0.2f.\n", cMail);
     }
-    else if (resp=='N')
-        printf("The cost of postage is PHP %0.2f.",cMail);
+    else if (resp == 'N')
+        printf("The cost of postage is PHP %0.2f.\n", cMail);
             
-    getch();
     return 0;
 }

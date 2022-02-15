@@ -12,11 +12,10 @@ CHECK or REFUND, depending on whether the difference is positive or negative.
 
 *****************************************************************************/
 #include <stdio.h>
-#include <conio.h>
 
 int main()
 {
-    float gIncome,nIncome,tDducted,tOwed,diff;
+    float gIncome, nIncome, tDducted, tOwed, diff;
     int dpendent;
     
     printf("Enter gross income [USD]: ");
@@ -35,10 +34,9 @@ int main()
     printf("\n\nThe tax you owe is USD %0.2f.\n\n", tOwed);
     
     if (diff > 0)
-        printf("SEND CHECK");
+        printf("SEND CHECK\n");
     else
-        printf("REFUND");
+        printf("REFUND\n");
     
-    getch();
     return 0;
 }

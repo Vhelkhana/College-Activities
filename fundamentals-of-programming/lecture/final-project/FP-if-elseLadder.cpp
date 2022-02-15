@@ -62,21 +62,21 @@ int main()
     depMin = (hours * 60) + minutes;
     
     if (depMin >= 172.5 && depMin <= 531.5)
-        cout << "Closest departure time is 8:00 a.m., arriving at 10:16 a.m.";
+        cout << "Closest departure time is 8:00 a.m., arriving at 10:16 a.m.\n";
     else if (depMin >= 531.6 && depMin <= 631)
-        cout << "Closest departure time is 9:43 a.m., arriving at 11:52 a.m.";
+        cout << "Closest departure time is 9:43 a.m., arriving at 11:52 a.m.\n";
     else if (depMin >= 632 && depMin <= 723)
-        cout << "Closest departure time is 11:19 a.m., arriving at 1:31 p.m.";
+        cout << "Closest departure time is 11:19 a.m., arriving at 1:31 p.m.\n";
     else if (depMin >= 724 && depMin <= 803.5)
-        cout << "Closest departure time is 12:47 p.m., arriving at 3:00 p.m.";
+        cout << "Closest departure time is 12:47 p.m., arriving at 3:00 p.m.\n";
     else if (depMin >= 803.6 && depMin <= 892.5)
-        cout << "Closest departure time is 2:00 p.m., arriving at 4:08 p.m.";
+        cout << "Closest departure time is 2:00 p.m., arriving at 4:08 p.m.\n";
     else if (depMin >= 892.6 && depMin <= 1042.5)
-        cout << "Closest departure time is 3:45 p.m., arriving at 5:55 p.m.";
+        cout << "Closest departure time is 3:45 p.m., arriving at 5:55 p.m.\n";
     else if (depMin >= 1042.6 && depMin <= 1125)
-        cout << "Closest departure time is 7:00 p.m., arriving at 9:20 p.m.";
+        cout << "Closest departure time is 7:00 p.m., arriving at 9:20 p.m.\n";
     else if (depMin >= 1126 && depMin <= 1432.5)
-        cout << "Closest departure time is 9:45 p.m., arriving at 11:58 p.m.";
+        cout << "Closest departure time is 9:45 p.m., arriving at 11:58 p.m.\n";
 
     return 0;
 }

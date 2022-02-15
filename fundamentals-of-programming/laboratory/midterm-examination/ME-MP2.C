@@ -13,7 +13,6 @@ Enter time in seconds: 7322
 *****************************************************************************/
 
 #include <stdio.h>
-#include <conio.h>
 
 int s, H, M, S;
 
@@ -28,6 +27,5 @@ int main()
 	
 	printf("%d seconds is equivalent to %d hours %d minutes %d seconds.\n", s, H, M, S);
 	
-    getch();
     return 0;
 }
