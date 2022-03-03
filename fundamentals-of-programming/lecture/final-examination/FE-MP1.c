@@ -2,7 +2,7 @@
 
 FINAL EXAMINATION (LEC)
 
-Write a program that reads in a room number, the room�s capacity, and the
+Write a program that reads in a room number, the room's capacity, and the
 size of the class enrolled so far and prints an output line showing the
 classroom number, the capacity, number of seats filled, number of seats
 available, and whether the class is filled or not filled. Your program should
