@@ -1,5 +1,26 @@
 {
     "files.associations": {
-        "MP1.C": "cpp"
+        "MP1.C": "cpp",
+        "ADDAFTER.C": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "addAfter (orig).C": "cpp",
+        "addAfter(orig).C": "cpp",
+        "addAfter_orig.C": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "type_traits": "cpp",
+        "cmath": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "initializer_list": "c",
+        "utility": "c",
+        "stdio.h": "c",
+        "draft.C": "cpp",
+        "typeinfo": "c",
+        "stdlib.h": "c",
+        "MP4.C": "cpp",
+        "MP5.C": "cpp"
     }
 }
