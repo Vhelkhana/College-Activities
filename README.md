@@ -2,8 +2,9 @@
 
 I made this repository to store the codes that I did for college.
 
-## Table of Contents
-### Fundamentals of Programming
+## First Year
+### First Semester
+#### Fundamentals of Programming
 
 <table>
   <tbody>
@@ -151,3 +152,7 @@ I made this repository to store the codes that I did for college.
     </tr>
   </tbody>
 </table>
+
+### Second Semester
+#### Data Structures and Algorithms
+#### Introduction to Computing
